@@ -1,15 +1,11 @@
 package domain
 
+import domain.criterios.CriterioDeAprovacao
+
 class AnalisadorDeAprovacao {
+	private lateinit var criterioDoAnalisador: CriterioDeAprovacao
 
-    // ---------------------------------
-    //
-    //      Seu código deve vir aqui
-    //
-    //      Defina atributos e métodos conforme especificado
-    //      no arquivo de teste encontrado em
-    //      'src/test/kotlin/domain/AnalisadorDeAprovacaoTest'
-    //
-    // ---------------------------------
-
+	fun defineCriterio(criterio: CriterioDeAprovacao) {
+		this.criterioDoAnalisador = criterio
+	}
 }
